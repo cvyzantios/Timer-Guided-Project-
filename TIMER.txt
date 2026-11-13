@@ -1,0 +1,12 @@
+private void timer_Tick(object sender,EventArgs e)
+{
+lblTime.Text=DateTime.ToString("HH:mm");
+lblSecond.Text.DateTime.Now.ToString("ss");
+lblDate.Text=DateTime.Now.ToString("dddd");
+lblSecond.Location=new Point(lblTime.Location.X+lblTime.Width-5,lblSecond.Location.Y);
+}
+private void form1_Load(object sender,EventArgs e)
+{
+timer.Start();
+}
+}
